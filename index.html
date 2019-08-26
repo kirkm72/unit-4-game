@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Game using JQuery instead of vanilla javascript.">
+        <title>Crystal Collector</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <!-- Bootstrap links provided in Bootstrap 3.4.1 basic template header -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <!-- JQuery & Bootstrap JS links -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>  
+        <!-- My raw css file -->
+        <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.css">  -->
+    </head>
+
+    <style>
+        /* #left{
+            border: 1px solid red;
+
+        }
+        #right{
+            border: 1px solid blue;
+        } */
+
+        div > img {
+            width: 100%
+        }
+
+    </style>
+
+    <body>
+        <div class='container'>
+            <div class='row'>
+                <div class=col-md-12>
+                    <h1 align = 'center'> Crystal Collector</h1>
+                    <hr>
+                    <h4>This game will generate and show a magic number. There will be 4 crystals shown.
+                        Each crystal will be worth a random number between 1 & 12. Selecting any crystal will add 
+                        the random number assigned to that crystal to your number. Select any combination of crytals
+                        that will result in adding your number up to the magic number without going over.
+                        Go over and you lose.
+                    </h4>
+                    <hr>
+                    <!-- Put Magic number in large, centered box -->
+                    <p id='number'>  Magic Number: </p>
+                    <p id='yourNum'> Your Number: </p>
+                    <p id='wins'>  Wins: </p>
+                    <p id='losses'> Losses: </p>
+                    <!-- Put 4 crystal icons in row below magic number box -->
+                </div>
+                <div class='row'>
+                    <div id="left" class='col-md-3'>
+                        <img id='green' src="assets/images/greenCrystal.jpg"  class="img-fluid mx-auto d-block"> </img>    
+                    </div>
+                    <div id="left" class='col-md-3'>
+                        <img id='red' src="assets/images/redCrystal.jpg"  class="img-fluid mx-auto d-block"> </img>
+                    </div>
+                    <div id="right" class='col-md-3'>
+                        <img id='yellow' src="assets/images/yellowCrystal.jpg"   class="img-fluid mx-auto d-block"> </img>
+                    </div>
+                    <div id="right" class='col-md-3'>
+                        <img id='blue' src="assets/images/blueCrystal.jpg"  class="img-fluid mx-auto d-block"> </img>
+                    </div>    
+                </div>
+
+
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- JS for this page -->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+                
+    </body>
+
+
+</html> 
