@@ -93,7 +93,7 @@ function buttons(){ //function to assign values to buttons
         }    
     };
     
-    function play(btns,tempSum){
+    function play(){
         $("#green").on("click", function(event){
             tempSum += btns[0]; //add button value btns[0] to tempSum when green crystal clicked
             console.log("green: " +btns[0] + " Your Number: " + tempSum );
@@ -126,8 +126,8 @@ function buttons(){ //function to assign values to buttons
 
 createMagic();
 buttons();
-play(btns,tempSum);
-check(tempSum, magic);
+play();
+// check(tempSum, magic);
 
 
 
@@ -139,5 +139,5 @@ check(tempSum, magic);
 // 6. Compare total to magic# Continue unless matches or exceeds - done
 //     a. if matches, fire "winning" function and increments wins counter - done
 //     b. if exceeds, fire "losing" function and increments loss counter - done
-// 7. regenerates magic number, button values for next game
+// 7. Regenerates magic number, button values, resets temp number for next game
 
